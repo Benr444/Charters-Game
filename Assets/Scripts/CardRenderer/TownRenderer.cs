@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UnitCardRenderer : CharterCardRenderer<UnitCard>
+public class TownRenderer : CharterCardRenderer<TownCard>
 {
     public Text powerText;
     public Text hpText;

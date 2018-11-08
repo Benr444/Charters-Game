@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UnitCardRenderer : CharterCardRenderer<UnitCard>
+public class ImprovementRenderer : CharterCardRenderer<ImprovementCard>
 {
-    public Text powerText;
-    public Text hpText;
+    public Text addedPowerText;
+    public Text addedHPText;
 
     // Update is called once per frame
     public override void Update()
     {
         base.Update();
-        hpText.text = "" + cardData.GetHP();
-        powerText.text = "" + cardData.GetPower();
+        addedHPText.text = "+0";
+        addedPowerText.text = "+0";
     }
 }
